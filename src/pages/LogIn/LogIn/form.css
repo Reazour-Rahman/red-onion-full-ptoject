@@ -1,0 +1,11 @@
+.sign{
+    background-image: url(../../../images/display/bannerbackground.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 100%;
+}
+@media screen and (min-width:900px) and (max-width:1600px)  {
+    .width{
+        width: 50% !important;
+    }
+}

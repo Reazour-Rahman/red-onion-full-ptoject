@@ -1,0 +1,182 @@
+[
+    {
+      "id": 1,
+      "category": "lunch",
+      "title": "Healthy Meal Plan",
+      "slogan": "Hunger should kick the can!",
+      "img": "https://i.ibb.co/XCJrYZC/lunch6.png",
+      "price": "23.99",
+      "rating": 4.5,
+      "p":"tomatoes fulfill all my wishes. mangoes taste sour unripe, green, I can't handle the flavour. dieting doesn't come easy,wheat, rice is a necessity.ideas and poems come running at night, when my stomach's high."
+    },
+    {
+      "id": 2,
+      "category": "lunch",
+      "title": "Fried Chicken Bento",
+      "slogan": "Dude, let’s give some food.",
+      "img": "https://i.ibb.co/wJp8q63/lunch5.png",
+      "price": "9.99",
+      "rating": 5,
+      "p":"tomatoes fulfill all my wishes. mangoes taste sour unripe, green, I can't handle the flavour. dieting doesn't come easy,wheat, rice is a necessity.ideas and poems come running at night, when my stomach's high."
+    },
+    {
+      "id": 3,
+      "category": "lunch",
+      "title": "Tarragon-Rubbed-Salmon",
+      "slogan": "Give what you can.",
+      "img": "https://i.ibb.co/sCxNLHW/lunch3.png",
+      "price": "6.99",
+      "rating": 3,
+      "p":"tomatoes fulfill all my wishes. mangoes taste sour unripe, green, I can't handle the flavour. dieting doesn't come easy,wheat, rice is a necessity.ideas and poems come running at night, when my stomach's high."
+    },
+    {
+      "id": 4,
+      "category": "lunch",
+      "title": "Indian Lunch",
+      "slogan": "Take a bite out of hunger.",
+      "img": "https://i.ibb.co/WpCmkSc/lunch4.png",
+      "price": "8.99",
+      "rating": 4,
+      "p":"tomatoes fulfill all my wishes. mangoes taste sour unripe, green, I can't handle the flavour. dieting doesn't come easy,wheat, rice is a necessity.ideas and poems come running at night, when my stomach's high."
+    },
+    {
+      "id": 5,
+      "category": "lunch",
+      "title": "Beef Steak",
+      "slogan": "Happy as can be.",
+      "img": "https://i.ibb.co/XzZqW1X/lunch2.png",
+      "price": "15.99",
+      "rating": 3.5,
+      "p":"tomatoes fulfill all my wishes. mangoes taste sour unripe, green, I can't handle the flavour. dieting doesn't come easy,wheat, rice is a necessity.ideas and poems come running at night, when my stomach's high."
+    },
+    {
+      "id": 6,
+      "category": "lunch",
+      "title": "Honey-Soy-Glazed-Salmon with Peppers",
+      "slogan": "Eat away at hunger.",
+      "img": "https://i.ibb.co/5Wtnb9x/lunch1.png",
+      "price": "7.99",
+      "rating": 4.5,
+      "p":"tomatoes fulfill all my wishes. mangoes taste sour unripe, green, I can't handle the flavour. dieting doesn't come easy,wheat, rice is a necessity.ideas and poems come running at night, when my stomach's high."
+    },
+    {
+      "id": 7,
+      "category": "Dinner",
+      "title": "Salmon with Grapefruit and Lentil salad",
+      "slogan": "Lend a hand, give a can.",
+      "img": "https://i.ibb.co/J3VD7RB/dinner6.png",
+      "price": "9.99",
+      "rating": 5,
+      "p": "As much as I would love to be a person that goes to parties and has a couple of drinks and has a nice time – that doesn’t work for me. I do that very unsuccessfully. I’d just rather sit at home and read, or go out to dinner with someone, or talk to someone I love, or talk to somebody that makes me laugh.” ~ Daniel Radcliffe"
+    },
+    {
+      "id": 8,
+      "category": "Dinner",
+      "title": "Lemony Salmon Piccata",
+      "slogan": "You can help beat hunger!",
+      "img": "https://i.ibb.co/XZfXVSQ/dinner5.png",
+      "price": "10.99",
+      "rating": 4,
+      "p": "As much as I would love to be a person that goes to parties and has a couple of drinks and has a nice time – that doesn’t work for me. I do that very unsuccessfully. I’d just rather sit at home and read, or go out to dinner with someone, or talk to someone I love, or talk to somebody that makes me laugh.” ~ Daniel Radcliffe"
+    },
+    {
+      "id": 9,
+      "category": "Dinner",
+      "title": "French Fries with Cheese",
+      "slogan": "Will carol for cans!",
+      "img": "https://i.ibb.co/THzLm3p/dinner4.png",
+      "price": "12.99",
+      "rating": 5,
+      "p": "As much as I would love to be a person that goes to parties and has a couple of drinks and has a nice time – that doesn’t work for me. I do that very unsuccessfully. I’d just rather sit at home and read, or go out to dinner with someone, or talk to someone I love, or talk to somebody that makes me laugh.” ~ Daniel Radcliffe"
+    },
+    {
+      "id": 10,
+      "category": "Dinner",
+      "title": "Garlic Butter Baked salmon",
+      "slogan": "Take a bite out of hunger.",
+      "img": "https://i.ibb.co/9TQ2NZx/dinner3.png",
+      "price": "8.99",
+      "rating": 3,
+      "p": "As much as I would love to be a person that goes to parties and has a couple of drinks and has a nice time – that doesn’t work for me. I do that very unsuccessfully. I’d just rather sit at home and read, or go out to dinner with someone, or talk to someone I love, or talk to somebody that makes me laugh.” ~ Daniel Radcliffe"
+    },
+    {
+      "id": 11,
+      "category": "Dinner",
+      "title": "Beef Steak",
+      "slogan": "Give from the heart.",
+      "img": "https://i.ibb.co/TcY29w8/dinner1.png",
+      "price": "6.99",
+      "rating": 5,
+      "p": "As much as I would love to be a person that goes to parties and has a couple of drinks and has a nice time – that doesn’t work for me. I do that very unsuccessfully. I’d just rather sit at home and read, or go out to dinner with someone, or talk to someone I love, or talk to somebody that makes me laugh.” ~ Daniel Radcliffe"
+    },
+    {
+      "id": 12,
+      "category": "Dinner",
+      "title": "Backed Chicken",
+      "slogan": "Act out against hunger.",
+      "img": "https://i.ibb.co/LvYR57v/dinner2.png",
+      "price": "9.99",
+      "rating": 3.5,
+      "p": "As much as I would love to be a person that goes to parties and has a couple of drinks and has a nice time – that doesn’t work for me. I do that very unsuccessfully. I’d just rather sit at home and read, or go out to dinner with someone, or talk to someone I love, or talk to somebody that makes me laugh.” ~ Daniel Radcliffe"
+    },
+    {
+      "id": 13,
+      "category": "Breakfast",
+      "title": "Bagel and Cream Cheese",
+      "slogan": "Lend a hand, give a can.",
+      "img": "https://i.ibb.co/hRGtLPq/breakfast4.png",
+      "price": "6.99",
+      "rating": 5,
+      "p":"It is more important to eat some carbohydrates at breakfast, because the brain needs fuel right away, and carbohydrate is the best source."
+    },
+    {
+      "id": 14,
+      "category": "Breakfast",
+      "title": "Breakfast Sandwich",
+      "slogan": "You can help beat hunger!",
+      "img": "https://i.ibb.co/qdZBxvM/breakfast2.png",
+      "price": "7.99",
+      "rating": 4.5,
+      "p":"It is more important to eat some carbohydrates at breakfast, because the brain needs fuel right away, and carbohydrate is the best source."
+    },
+    {
+      "id": 15,
+      "category": "Breakfast",
+      "title": "Backed Chicken",
+      "slogan": "Will carol for cans!",
+      "img": "https://i.ibb.co/w0ddWJZ/breakfast3.png",
+      "price": "15.99",
+      "rating": 4.5,
+      "p":"It is more important to eat some carbohydrates at breakfast, because the brain needs fuel right away, and carbohydrate is the best source."
+    },
+    {
+      "id": 16,
+      "category": "Breakfast",
+      "title": "Egg Bnedict",
+      "slogan": "Take a bite out of hunger.",
+      "img": "https://i.ibb.co/RYt69pd/breakfast1.png",
+      "price": "5.99",
+      "rating": 4,
+      "p":"It is more important to eat some carbohydrates at breakfast, because the brain needs fuel right away, and carbohydrate is the best source."
+    },
+    {
+      "id": 17,
+      "category": "Breakfast",
+      "title": "Toast Croissant Fried egg",
+      "slogan": "Give from the heart.",
+      "img": "https://i.ibb.co/jvCcnJB/breakfast6.png",
+      "price": "6.99",
+      "rating": 5,
+      "p":"It is more important to eat some carbohydrates at breakfast, because the brain needs fuel right away, and carbohydrate is the best source."
+    },
+    {
+      "id": 18,
+      "category": "Breakfast",
+      "title": "Breakfast fried and Egg Toast Brunch ",
+      "slogan": "Act out against hunger.",
+      "img": "https://i.ibb.co/qmzLZHn/breakfast5.png",
+      "price": "3.99",
+      "rating": 5,
+      "p":"It is more important to eat some carbohydrates at breakfast, because the brain needs fuel right away, and carbohydrate is the best source."
+    }
+  ]

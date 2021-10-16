@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+}
+.banner-container{
+    background-image: url(../../../images/display/banner.jpg);
+    height: 510px;
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* -------------------------- */
+  
+:root {
+	--primary-color: #00bcd4;
+	--accent-color: #ff0037;
+
+	--text-color: #263238;
+	--body-color: #80deea;
+	--main-font: 'roboto';
+	--font-bold: 700;
+	--font-regular: 400;
+}
+* { box-sizing: border-box }
+
+
+
+input, 
+button {
+	border: none;
+	background: none;
+	outline: 0;
+}
+button {cursor: pointer}
+.SearchBox-input::placeholder {/* No es un seudoelemento estandar */
+ color:white;
+	opacity: .6;
+}
+/* Chrome, Opera ySafari */
+.SearchBox-input::-webkit-input-placeholder {
+  color: white;
+}
+/* Firefox 19+ */
+.SearchBox-input::-moz-placeholder {
+  color: white;
+}
+/* IE 10+ y Edge */
+.SearchBox-input:-ms-input-placeholder {
+  color: white;
+}
+/* Firefox 18- */
+#formGroupExampleInput:-moz-placeholder {
+  color: white;
+}
+
+
+
+.SearchBox {
+	--height: 2.5em;
+	display: flex;
+	
+	border-radius: var(--height);
+	background-color: white;
+	height: var(--height);
+}
+	.SearchBox:hover .SearchBox-input {
+		padding-left: 2em;
+		padding-right: 1em;
+		width: 190px;
+	}
+	/* .SearchBox:focus .SearchBox-input {
+		padding-left: 2em;
+		padding-right: 1em;
+		width: 190px;
+	} */
+	.SearchBox-input {
+		width: 0;
+		font-size: 1.2em;
+		color: #fff;
+		transition: .45s;
+	}
+	.SearchBox-button {
+		display: flex;
+		border-radius: 2.5em;
+		width: 100px;
+		height: var(--height);
+		background-color: var(--accent-color);
+		transition: .3s;
+	}
+	.SearchBox-icon {
+		margin: auto;
+		color: #fff;
+	}
+
+
+@media screen and (min-width: 400px){
+	.SearchBox .SearchBox-input {
+		width: 350px;
+	}
+
+}
