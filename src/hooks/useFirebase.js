@@ -71,7 +71,6 @@ const useFirebase = () => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
               setUser(user)
-
             } 
           });
     },[auth])
@@ -96,6 +95,8 @@ const useFirebase = () => {
     //         setError(error.message);
     //     });
     // }
+
+    
 
     return {
         handleCreateAccount,

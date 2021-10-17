@@ -26,12 +26,12 @@ const Register = () => {
     const history = useHistory();
     const location = useLocation();
 
-    const redirect_uri = location.state?.form || '/'
+    let { from } = location.state || { from: { pathname: "/" } };
     const googleSignIn = () => {
 
     handleGoogleLogIn()
     .then((result) => {
-        history.push(redirect_uri)
+        history.replace(from);
     })
 
     };

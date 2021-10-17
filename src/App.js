@@ -9,6 +9,7 @@ import LogIn from './pages/LogIn/LogIn/LogIn';
 import Register from './pages/LogIn/LogIn/Register';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Breakfast from './pages/Shared/Categories/Category/Breakfast';
+import Details from './pages/Shared/Categories/Category/Details/Details';
 import Dinner from './pages/Shared/Categories/Category/Dinner';
 import Lunch from './pages/Shared/Categories/Category/Lunch';
 import Footer from './pages/Shared/Footer/Footer';
@@ -52,6 +53,10 @@ const App = () => {
               <Banner></Banner>
               <HeaderCategory></HeaderCategory>
               <Breakfast></Breakfast> 
+            </Route>
+
+            <Route path="/details/:FoodId">
+              <Details></Details>
             </Route>
 
             <PrivateRoute path="/delivery">

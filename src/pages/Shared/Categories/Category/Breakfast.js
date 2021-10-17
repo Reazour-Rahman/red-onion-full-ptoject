@@ -7,7 +7,11 @@ import { Button, Rating } from '@mui/material';
 import Skeleton from '@mui/material/Skeleton';
 import './Lunch.css'
 import GoodWill from '../../../Homes/GoodWill/GoodWill';
+import Checkbox from '@mui/material/Checkbox';
+import { pink } from '@mui/material/colors';
+import { Link } from 'react-router-dom';
 
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const Breakfast = () => {
     const [foods, setFoods] = useState([])
     
@@ -28,6 +32,8 @@ const Breakfast = () => {
           color: '#ff3d47',
         },
       });
+
+
     return (
         <div className="container">
             <div id="elementId" className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
@@ -108,6 +114,7 @@ const Breakfast = () => {
                             </div>        
                     </div>
                 </div>):foods.map( food => food.category==="Breakfast"? <div>
+                    <Link to={`details/${food.id}`} style={{textDecoration:"none"}}>
                     <div class="col d-flex justify-content-center">
                         <div style={{width:"366px"}}  class="card h-100 border-0 card-animation rounded-0">
                             <div className="d-flex justify-content-center align-items-center"><img style={{width:"230px", height:"230px"}} src={food.img} class="card-img-top mt-2" alt="..."/></div>
@@ -126,10 +133,22 @@ const Breakfast = () => {
                                         emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
                                     />
                                     </Box>
+
+                                    <Checkbox
+                                        {...label}
+                                        sx={{
+                                        color: pink[800],
+                                        '&.Mui-checked': {
+                                            color: pink[600],
+                                        },
+                                        }}
+                                    />
+                                    
                                 </div>
                             </div>    
                         </div>
-                    </div> 
+                    </div>
+                    </Link> 
                                 
                 </div>: <div></div>)
                 }
