@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 import useAuth from '../../../hooks/useAuth';
 import './form.css'
 import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     const {handleGoogleLogIn , handleTwitterLogIn, handleGitHubLogIn,handleFaceBookLogIn, handleCreateAccount, user} = useAuth();
@@ -28,12 +29,10 @@ const Register = () => {
 
     let { from } = location.state || { from: { pathname: "/" } };
     const googleSignIn = () => {
-
-    handleGoogleLogIn()
-    .then((result) => {
-        history.replace(from);
-    })
-
+        handleGoogleLogIn()
+        .then((result) => {
+            history.replace(from);
+        })
     };
 
 
@@ -75,7 +74,7 @@ const Register = () => {
                     <Button onClick={handleTwitterLogIn} sx={{backgroundColor:"#ff0037"}} className="rounded-0" variant="contained">Twitter Sign in</Button>
                     <Button onClick={handleGitHubLogIn} sx={{backgroundColor:"#ff0037"}} className="rounded-0" variant="contained">GitHub Sign in</Button>
                 </div>
-            
+                <Link className="text-center mt-3" style={{textDecoration:"none", color:"#ff0037"}} to="login"><p>Already have an account ?</p></Link>
             </div>
             </div>
         </div>

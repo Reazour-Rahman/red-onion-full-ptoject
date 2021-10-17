@@ -7,6 +7,7 @@ import { Button, Rating } from '@mui/material';
 import Skeleton from '@mui/material/Skeleton';
 import './Lunch.css'
 import GoodWill from '../../../Homes/GoodWill/GoodWill';
+import { Link } from 'react-router-dom';
 
 const Dinner = () => {
     const [foods, setFoods] = useState([])
@@ -108,28 +109,30 @@ const Dinner = () => {
                             </div>        
                     </div>
                 </div>):foods.map( food => food.category==="Dinner"? <div>
-                    <div class="col d-flex justify-content-center">
-                        <div style={{width:"366px"}}  class="card h-100 border-0 card-animation rounded-0">
-                            <div className="d-flex justify-content-center align-items-center"><img style={{width:"230px", height:"230px"}} src={food.img} class="card-img-top mt-2" alt="..."/></div>
-                            <div class="card-body">
-                                <p class="card-title fw-bolder text-center">{food.title}</p>
-                                <p class="card-text text-center fw-light">{food.slogan}</p>
-                                <div className="d-flex justify-content-around align-items-center">
-                                    <h5>${food.price}</h5>
-                                    <Box sx={{'& > legend': { mt: 2 },}}>
-                                    <StyledRating sx={{marginTop:"2px"}}
-                                        name="customized-color"
-                                        defaultValue={food.rating}
-                                        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
-                                        precision={0.5}
-                                        icon={<FavoriteIcon fontSize="inherit" />}
-                                        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
-                                    />
-                                    </Box>
-                                </div>
-                            </div>    
-                        </div>
-                    </div> 
+                    <Link to={`details/${food.id}`} style={{textDecoration:"none", color:"black"}}>
+                        <div class="col d-flex justify-content-center">
+                            <div style={{width:"366px"}}  class="card h-100 border-0 card-animation rounded-0">
+                                <div className="d-flex justify-content-center align-items-center"><img style={{width:"230px", height:"230px"}} src={food.img} class="card-img-top mt-2" alt="..."/></div>
+                                <div class="card-body">
+                                    <p class="card-title fw-bolder text-center">{food.title}</p>
+                                    <p class="card-text text-center fw-light">{food.slogan}</p>
+                                    <div className="d-flex justify-content-around align-items-center">
+                                        <h5>${food.price}</h5>
+                                        <Box sx={{'& > legend': { mt: 2 },}}>
+                                        <StyledRating sx={{marginTop:"2px"}}
+                                            name="customized-color"
+                                            defaultValue={food.rating}
+                                            getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+                                            precision={0.5}
+                                            icon={<FavoriteIcon fontSize="inherit" />}
+                                            emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+                                        />
+                                        </Box>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div> 
+                    </Link>
                                 
                 </div>: <div></div>)
                 }

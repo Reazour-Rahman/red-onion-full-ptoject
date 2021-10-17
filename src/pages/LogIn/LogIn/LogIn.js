@@ -2,11 +2,24 @@ import { Button } from '@mui/material';
 import React from 'react';
 import useAuth from '../../../hooks/useAuth';
 import './form.css'
-
+import { useHistory, useLocation } from 'react-router';
 import './LogIn.css'
 
 const LogIn = () => {
     const {handleGoogleLogIn, handleTwitterLogIn, handleGitHubLogIn, handleFaceBookLogIn} = useAuth();
+    
+    const history = useHistory();
+    const location = useLocation();
+
+    let { from } = location.state || { from: { pathname: "/" } };
+    const googleSignIn = () => {
+        handleGoogleLogIn()
+        .then((result) => {
+            history.replace(from);
+        
+        })
+    };
+
     return (
         <div className="d-flex justify-content-center sign p-5">
             <div className="w-75 width">
@@ -26,7 +39,7 @@ const LogIn = () => {
                 </form>
 
                 <div className="d-flex flex-column gap-3 mt-4">
-                    <Button onClick={handleGoogleLogIn} color="success" sx={{backgroundColor:"#ff0037"}} className="rounded-0" variant="contained">Google Sign in</Button>
+                    <Button onClick={googleSignIn} color="success" sx={{backgroundColor:"#ff0037"}} className="rounded-0" variant="contained">Google Sign in</Button>
                     <Button onClick={handleFaceBookLogIn} sx={{backgroundColor:"#ff0037"}} className="rounded-0" variant="contained">Facebook Sign in</Button>
                     <Button onClick={handleTwitterLogIn} sx={{backgroundColor:"#ff0037"}} className="rounded-0" variant="contained">Twitter Sign in</Button>
                     <Button onClick={handleGitHubLogIn} sx={{backgroundColor:"#ff0037"}} className="rounded-0" variant="contained">GitHub Sign in</Button>

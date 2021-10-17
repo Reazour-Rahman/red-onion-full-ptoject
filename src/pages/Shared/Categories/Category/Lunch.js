@@ -7,6 +7,7 @@ import { Button, Rating } from '@mui/material';
 import Skeleton from '@mui/material/Skeleton';
 import './Lunch.css'
 import GoodWill from '../../../Homes/GoodWill/GoodWill';
+import { Link } from 'react-router-dom';
 
 const Lunch = () => {
     const [foods, setFoods] = useState([])
@@ -108,6 +109,7 @@ const Lunch = () => {
                             </div>        
                     </div>
                 </div>):foods.map( food => food.category==="lunch"? <div>
+                    <Link to={`details/${food.id}`} style={{textDecoration:"none", color:"black"}}>
                     <div class="col d-flex justify-content-center">
                         <div style={{width:"366px"}}  class="card h-100 border-0 card-animation rounded-0">
                             <div className="d-flex justify-content-center align-items-center"><img style={{width:"230px", height:"230px"}} src={food.img} class="card-img-top mt-2" alt="..."/></div>
@@ -129,7 +131,8 @@ const Lunch = () => {
                                 </div>
                             </div>    
                         </div>
-                    </div> 
+                    </div>
+                    </Link> 
                                 
                 </div>: <div></div>)
                 }
@@ -144,3 +147,8 @@ const Lunch = () => {
 };
 
 export default Lunch;
+
+/* 
+
+to={`details/${food.id}`} style={{textDecoration:"none", color:"black"}}
+*/

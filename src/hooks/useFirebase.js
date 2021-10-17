@@ -5,7 +5,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChang
 initializationAuthentication();
 
 const useFirebase = () => {
-    const [user, setUser] = useState([]);
+    const [user, setUser] = useState({});
     const [error, setError] = useState('');
 
     const googleProvider = new GoogleAuthProvider();
@@ -68,12 +68,12 @@ const useFirebase = () => {
 
     /* Get the currently signed-in user (observer) */
     useEffect(()=>{
-        onAuthStateChanged(auth, (user) => {
+        onAuthStateChanged(auth, user => {
             if (user) {
               setUser(user)
             } 
           });
-    },[auth])
+    },[])
 
     /* Handle  Log Out */
     const handleGoogleLogOut = () =>{
